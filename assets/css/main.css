@@ -1,7 +1,9 @@
 :root {
     --blue-color: #044396;
+    --blue-color1: #003274;
     --light-blue-color: #00d2f7;
     --gold-color: #f6bd67;
+    --gold-color1: #e28a06;
     --smokewhite-color: #d8eafc;
     --text-color: #2f363d;
     
@@ -36,13 +38,13 @@ font-weight: 900;
 
 /* Footer Styles */
 .footer {
-    background-color: #f8f9fa;
-    color: #333;
-    border-top: 1px solid #dee2e6;
+    background-color: var(--blue-color);
+    color: var(--gold-color);
+    border-top: 1px solid var(--text-color);
 }
 
 .footer-nav a {
-    color: #007c91;
+    color: var(--gold-color);
     text-decoration: none;
     margin: 0 10px;
 }
@@ -52,18 +54,21 @@ font-weight: 900;
 }
 
 .social-icons a {
-    color: #007c91;
+    color: var(--gold-color);
     font-size: 1.2rem;
     height: 750px;
     transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #005e6e;
+    color: var(--gold-color1);
+}
+.footerNavl{
+    color: var(--smokewhite-color)!important;
 }
 /* Hero Carousel Styles */
 .hero-carousel {
-    background: #f6bd67;
+    background: var(--gold-color);
     padding: 0;
     text-align: center;
 }
@@ -163,13 +168,16 @@ font-weight: 900;
 /* Testimonial Section */
 .testimonial-section {
     background-color: var(--gold-color);
+    border-bottom: 10px solid var(--gold-color1);
+    /* box-shadow: 0 6px 9px 0 var(--blue-color1); */
+    
 }
 
 .testimonial-card {
     max-width: 800px;
     height: 400px;
-    background-color: var(--blue-color);
-    border-left: 90px solid #007c91;
+    background-color: #007c91;
+    border-left: 50px solid var(--blue-color);
     padding: 20px;
 }
 
@@ -177,7 +185,8 @@ font-weight: 900;
     width: 130px;
     height: 130px;
     object-fit: cover;
-    border: 10px solid var(--gold-color);
+    border: 4px solid var(--gold-color);
+    box-shadow: 2px 2px 5px black, -2px -2px 5px var(--blue-color1);
 }
 
 .testimonial-text {
@@ -198,17 +207,26 @@ color: var(--smokewhite-color) !important;
 
 /* Services Section */
 .services-section {
-    background-color: #f2fefe;
+    background-color: var(--gold-color);
+    
 }
-
+.ourServices{
+    font-weight: 900;
+    letter-spacing: 10px;
+    font-size: 3rem;
+    color: var(--blue-color) !important;
+}
 .service-card .card-title {
     font-weight: 700;
-    color: #007c91;
+    color: var(--blue-color);
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .service-card .card-text {
     font-size: 0.95rem;
-    color: #555;
+    color: var(--text-color);
+    text-align: justify;
 }
 
 .service-card img {
@@ -217,17 +235,20 @@ color: var(--smokewhite-color) !important;
 }
 
 .service-card .btn-outline-primary {
-    border-color: #007c91;
-    color: #007c91;
+    border-color: var(--blue-color);
+    color: var(--blue-color);
 }
 
 .service-card .btn-outline-primary:hover {
-    background-color: #007c91;
-    color: #fff;
+    background-color: var(--blue-color1);
+    color: var(--smokewhite-color);
+}
+.card-body{
+    text-align: center;
 }
 
 /*Partners Section */
-.partners-section {
+/* .partners-section {
     background-color: #ffffff;
 }
 
@@ -270,7 +291,7 @@ color: var(--smokewhite-color) !important;
     100% {
         transform: translateX(-50%);
     }
-} 
+}  */
 
 
 
@@ -315,3 +336,35 @@ color: var(--smokewhite-color) !important;
     
 }
 
+/* Services.html styling. this is styling of different page */
+/* Sidebar styles */
+.nav-pills .nav-link {
+    font-weight: 500;
+    color: #007c91;
+    border-radius: 0.5rem;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .nav-link:hover {
+    background-color: #007c91;
+    color: #fff;
+}
+
+/* Content area */
+.service-detail h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-detail p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .services-layout .row {
+        flex-direction: column;
+    }
+}
