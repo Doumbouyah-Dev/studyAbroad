@@ -1,4 +1,5 @@
 :root {
+    --blue-color2:#007c91;
     --blue-color: #044396;
     --blue-color1: #003274;
     --light-blue-color: #00d2f7;
@@ -176,7 +177,7 @@ font-weight: 900;
 .testimonial-card {
     max-width: 800px;
     height: 400px;
-    background-color: #007c91;
+    background-color: var(--blue-color2);
     border-left: 50px solid var(--blue-color);
     padding: 20px;
 }
@@ -218,16 +219,16 @@ color: var(--smokewhite-color) !important;
 }
 .service-card .card-title {
     font-weight: 700;
-    color: var(--blue-color);
+    color: var(--gold-color);
     text-align: center;
     font-size: 1.5rem;
 }
 
 .service-card .card-text {
     font-size: 0.95rem;
-    color: var(--text-color);
+    color: var(--gold-color);
     text-align: justify;
-}
+} 
 
 .service-card img {
     object-fit: cover;
@@ -235,8 +236,9 @@ color: var(--smokewhite-color) !important;
 }
 
 .service-card .btn-outline-primary {
-    border-color: var(--blue-color);
-    color: var(--blue-color);
+    border-color: var(--gold-color);
+    color: var(--gold-color);
+    background-color: var(--blue-color);
 }
 
 .service-card .btn-outline-primary:hover {
@@ -245,6 +247,9 @@ color: var(--smokewhite-color) !important;
 }
 .card-body{
     text-align: center;
+    background-color: var(--blue-color2);
+    border-radius: 0.35rem;
+    border: none;
 }
 
 /*Partners Section */
@@ -342,6 +347,7 @@ color: var(--smokewhite-color) !important;
     font-weight: 500;
     color: #007c91;
     border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
 }
 
 .nav-pills .nav-link.active,
@@ -350,7 +356,17 @@ color: var(--smokewhite-color) !important;
     color: #fff;
 }
 
-/* Content area */
+/* Content area styling */
+.service-detail {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.service-detail.active {
+    display: block;
+}
+
+/* Section Titles */
 .service-detail h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
@@ -367,4 +383,20 @@ color: var(--smokewhite-color) !important;
     .services-layout .row {
         flex-direction: column;
     }
+
+    .nav-pills {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .nav-pills .nav-link {
+        margin-right: 0.5rem;
+        white-space: nowrap;
+    }
+}
+.orderlisting{
+
+}
+.conpanyEmphasis{
+    
 }
