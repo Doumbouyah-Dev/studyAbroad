@@ -29,3 +29,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  // Show or hide the button based on scroll position
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) { // Adjust the scroll threshold as needed
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  });
+
+  // Smooth scroll to the top when the button is clicked
+  scrollToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+});
