@@ -1,0 +1,116 @@
+:root {
+    --blue-color2: #007c91;
+    --blue-color: #044396;
+    --blue-color1: #003274;
+    --light-blue-color: #00d2f7;
+    --gold-color: #f6bd67;
+    --gold-color1: #e28a06;
+    --smokewhite-color: #d8eafc;
+    --text-color: #2f363d;
+    --trans-white: #f5f5f588;
+}
+
+
+body {
+    background-color: var(--smokewhite-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--blue-color1);
+}
+
+.card-title {
+    font-weight: 600;
+    color: var(--blue-color);
+}
+
+.social-icons i {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: var(--blue-color2);
+}
+
+.section-title {
+    color: var(--blue-color);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    border: none;
+}
+
+@media (max-width: 767px) {
+    .card-icon {
+        font-size: 2rem;
+    }
+}
+
+/* Back to the top button */
+#backToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--blue-color1);
+    border: none;
+    z-index: 1000;
+    display: none;
+    width: 50px;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+#backToTopBtn:hover {
+    background-color: var(--blue-color2);
+    transform: translateY(-3px);
+}
+
+/* Contact Form Submission */
+.contact-section {
+    background-color: var(--trans-white);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    max-width: 1200px;
+    margin: auto;
+}
+
+.form-control:focus {
+    border-color: var(--blue-color2);
+    box-shadow: 0 0 0 0.2rem rgba(0, 124, 145, 0.25);
+}
+
+.btn-send {
+    background-color: var(--gold-color1);
+    color: white;
+}
+
+.btn-send:hover {
+    background-color: var(--gold-color);
+    color: var(--text-color);
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    border: 0;
+    border-radius: 8px;
+}

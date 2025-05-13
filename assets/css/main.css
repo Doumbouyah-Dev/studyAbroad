@@ -77,7 +77,11 @@ body {
 .footerNavl {
     color: var(--smokewhite-color) !important;
 }
+/* #pfooter{
+    width: 100% !important;
+    margin: 0 !important;
 
+} */
 /* Hero */
 .hero-carousel {
     background: var(--gold-color);
