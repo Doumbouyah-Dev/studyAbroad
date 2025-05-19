@@ -37,8 +37,8 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-light shadow-sm custom-navbar">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center" href="index.html">
-                    <img src="assets/img/logon.png" alt="Logo" width="60" height="60" class="me-1">
+                <a class="navbar-brand d-flex align-items-center" href="index.html" id="navbarbrand">
+                    <img src="assets/img/logon.png" alt="Logo" width="60" height="60" class="me-1" id="logoID">
                     <span class="business-name" id="lodoName">AZ Study Abroad Agency</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -68,10 +68,10 @@
                         <div class="hero-text ms-4">
                             <h2>Transform Your Future</h2>
                             <p>Empowering individuals with modern solutions to succeed in a digital world.</p>
-                            <a href="#" class="btn btn-teal">Get Started</a>
+                            <a href="mailto:azstudyabroadagency@gmail.com" class=" btn btn-teal">Mail us</a>
                         </div>
                         <div class="hero-img me-4">
-                            <img src="assets/img/hero1.png" alt="Slide 1" class="img-fluid rounded">
+                            <img src="assets/img/hero1.png" alt="Slide 1" class="img-fluid rounded herophotos">
                         </div>
                     </div>
                 </div>
@@ -82,10 +82,10 @@
                         <div class="hero-text">
                             <h2>Expert-Led Services</h2>
                             <p>Our professionals offer reliable and tailored services to fit your needs.</p>
-                            <a href="#" class="btn btn-teal">Explore Services</a>
+                            <a href="services.html" class="btn btn-teal">Explore Services</a>
                         </div>
                         <div class="hero-img">
-                            <img src="assets/img/hero2.png" alt="Slide 1" class="img-fluid rounded">
+                            <img src="assets/img/hero2.png" alt="Slide 1" class="img-fluid rounded herophotos">
                         </div>
                     </div>
                 </div>
@@ -96,10 +96,10 @@
                         <div class="hero-text">
                             <h2>Simple Admission Process</h2>
                             <p>Join us through a seamless admission cycle designed for convenience.</p>
-                            <a href="#" class="btn btn-teal">Apply Now</a>
+                            <a href="https://wa.me/917728068766" class="btn btn-teal">Apply Now</a>
                         </div>
                         <div class="hero-img">
-                            <img src="assets/img/hero3.png" alt="Slide 1" class="img-fluid rounded">
+                            <img src="assets/img/hero3.png" alt="Slide 1" class="img-fluid rounded herophotos">
                         </div>
                     </div>
                 </div>
@@ -110,10 +110,10 @@
                         <div class="hero-text">
                             <h2>We're Here to Help</h2>
                             <p>Reach out to our friendly team anytime—we’re always happy to support.</p>
-                            <a href="#" class="btn btn-teal">Contact Us</a>
+                            <a href="contact.html" class="btn btn-teal">Contact Us</a>
                         </div>
                         <div class="hero-img">
-                            <img src="assets/img/hero4.png" alt="Slide 1" class="img-fluid rounded">
+                            <img src="assets/img/hero4.png" alt="Slide 1" class="img-fluid rounded herophotos">
                         </div>
                     </div>
                 </div>
@@ -124,10 +124,10 @@
                         <div class="hero-text">
                             <h2>Discover More in Our FAQs</h2>
                             <p>Get quick answers to your most common questions anytime.</p>
-                            <a href="#" class="btn btn-teal">Read FAQs</a>
+                            <a href="faq.html" class="btn btn-teal">Read FAQs</a>
                         </div>
                         <div class="hero-img">
-                            <img src="assets/img/hero5.png" alt="Slide 1" class="img-fluid rounded">
+                            <img src="assets/img/hero5.png" alt="Slide 1" class="img-fluid rounded herophotos">
                         </div>
                     </div>
                 </div>
@@ -135,10 +135,10 @@
 
             <!-- Carousel Controls -->
             <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+                <span class="carousel-control-prev-icon" id="co-control2"></span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
+                <span class="carousel-control-next-icon" id="co-control1"></span>
             </button>
         </section>
 
@@ -174,7 +174,7 @@
                     <!-- Google Business Review -->
                     <div class="col-md-3 col-6">
                         <div class="stat-box p-4 shadow-sm rounded">
-                            <div class="stars mb-2">
+                            <div class="stars mb-2" id="starfont">
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-warning"></i>
                                 <i class="fas fa-star text-warning"></i>
@@ -407,16 +407,25 @@
                     <li class="list-inline-item"><a href="about.html">About</a></li>
                     <li class="list-inline-item"><a href="contact.html">Contact</a></li>
                     <li class="list-inline-item"><a href="faq.html">FAQ</a></li>
+                    <li class="list-inline-item"><a href="services.html">Disclaimers</a></li>
                 </ul>
                 <div class="social-icons mb-3">
-                    <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="me-3"><i class="fab fa-x-twitter"></i></a>
-                    <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/1KggaKTWGU/" class="me-3"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/adventurerz2025/" class="me-3"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/adventure-study/" class="me-3"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/adventurerz2025" class="me-3"><i class="fab fa-x-twitter"></i></a>
+                    <!-- <a href="#" class="me-3"><i class="fab fa-youtube"></i></a> -->
+                    <a href="https://wa.me/917728068766"><i class="fab fa-whatsapp"></i></a>
                 </div>
-                <p class="text-muted small footerNavl">&copy; 2025 Your Business Name. All rights reserved.</p>
+                <p class="text-muted small footerNavl">&copy; 2025 Adventurez Study Abroad Agency. All rights reserved.
+                </p>
+            </div>
+            <div class="ownership">
+                <p>Developed by <i><a href=" ">Doumbouyah-dev</a></i>
+                </p>
             </div>
         </footer>
 

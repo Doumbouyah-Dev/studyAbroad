@@ -1,5 +1,7 @@
 :root {
+    --bg-color: #75eaff;
     --blue-color2: #007c91;
+    --blue-color2trans: #0659662f;
     --blue-color: #044396;
     --blue-color1: #003274;
     --light-blue-color: #00d2f7;
@@ -7,30 +9,39 @@
     --gold-color1: #e28a06;
     --smokewhite-color: #d8eafc;
     --text-color: #2f363d;
-    --trans-white: #f5f5f588;
+    --trans-white: #f5f5f5fd;
+    --gold-colortrs: #007ec78c;
+    --black: #000000f5;
+    --text-blue: #0084ff;
+    --gold-colortrs1: #01070871;
+    --trans-black: #0000003a;
 }
 
 
 body {
+    background-image:  url("../img/bbg4.jpg");
+    background-size: cover;
     font-family: Arial, sans-serif;
-    background-color: var(--gold-color);
+    /* background-color: var(--gold-colortrs); */
     margin: 0;
     padding: 0;
 }
 
 /* Navbar */
+
 .custom-navbar {
-    background-color: var(--blue-color);
+    background-color: rgba(0, 0, 0, 0);
+    
 }
 
 .custom-navbar .navbar-brand {
     font-weight: 600;
-    color: var(--smokewhite-color);
+    color: var(--text-blue);
     font-size: 1.3rem;
 }
 
 .custom-navbar .nav-link {
-    color: var(--gold-color);
+    color: var(--text-blue);
     font-weight: 500;
     margin-right: 15px;
     transition: color 0.3s;
@@ -38,24 +49,25 @@ body {
 
 .custom-navbar .nav-link:hover,
 .custom-navbar .nav-link.active {
-    color: var(--gold-color);
+    color: var(--blue-color);
 }
 
 #lodoName {
-    color: var(--gold-color);
-    font-size: 2rem;
+    color: var(--text-blue);
+    font-size: 2.5rem;
     font-weight: 900;
+    text-shadow: 1px 1px 2px var(--text-color);
 }
 
 /* Footer */
 .footer {
-    background-color: var(--blue-color);
-    color: var(--gold-color);
-    border-top: 1px solid var(--text-color);
+    background-color: rgba(255, 217, 0, 0.13);
+    color: var(--text-blue);
+    border-top: 1px solid var(--text-blue);
 }
 
 .footer-nav a {
-    color: var(--gold-color);
+    color: var(--text-blue);
     text-decoration: none;
     margin: 0 10px;
 }
@@ -65,26 +77,31 @@ body {
 }
 
 .social-icons a {
-    color: var(--gold-color);
+    color: var(--text-blue);
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: var(--gold-color1);
+    color: var(--blue-color2);
+}
+.footerNavl{
+    color: var(--text-blue) !important;
+}
+.ownership{
+    width: 100%;
+    text-align: center;
+    color: var(--text-blue);
+    margin: 0;
+}
+.ownership p a{
+    text-decoration: none;
 }
 
-.footerNavl {
-    color: var(--smokewhite-color) !important;
-}
-/* #pfooter{
-    width: 100% !important;
-    margin: 0 !important;
 
-} */
 /* Hero */
 .hero-carousel {
-    background: var(--gold-color);
+    background: var(--trans-black);
     padding: 0;
     text-align: center;
 }
@@ -93,10 +110,15 @@ body {
     min-height: 500px;
     height: 600px;
 }
-
+#co-control1{
+    background-color: var(--blue-color)!important;
+}
+#co-control2 {
+    background-color: var(--blue-color) !important;
+}
 .hero-text {
     max-width: 700px;
-    color: #003c47;
+    color: var(--text-blue);
 }
 
 .hero-text h2 {
@@ -104,7 +126,8 @@ body {
     font-weight: 700;
     margin-bottom: 15px;
     margin-top: 0px;
-    color: var(--blue-color);
+    text-shadow: 1px 1px 2px var(--text-color);
+    color: var(--text-blue);
 }
 
 .hero-text p {
@@ -114,18 +137,22 @@ body {
 }
 
 .btn-teal {
-    background-color: var(--blue-color);
+    background-color: var(--text-blue);
     color: var(--gold-color);
     padding: 10px 24px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 900;
+    border: 1px solid var(--text-blue);
+    box-shadow: 2px 2px 5px black, -2px -2px 5px var(--blue-color1);
     transition: background-color 0.3s ease;
 }
 
 .btn-teal:hover {
     background-color: var(--gold-color);
     color: var(--blue-color);
+    border: 1px solid var(--gold-color);
+    box-shadow: 2px 2px 5px var(--blue-color1), -2px -2px 5px var(--text-blue);
 }
 
 .hero-img img {
@@ -136,15 +163,16 @@ body {
 
 /* Statistics */
 .stats-section {
-    background-color: var(--blue-color);
+    background-color: var(--blue-color2trans);
     padding: 0;
     margin: 0;
 }
 
 .stat-box {
-    background-color: var(--gold-color);
+    background-color: var(--trans-black);
     border-left: 4px solid var(--gold-color);
     transition: transform 0.3s ease;
+    box-shadow: 2px 2px 5px var(--black), 2px 2px 5px var(--text-blue)!important;
 }
 
 .stat-box:hover {
@@ -154,23 +182,26 @@ body {
 .stat-value {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--blue-color);
+    color: var(--text-blue);
+    text-shadow: 1px 1px 2px var(--text-color);
 }
 
 .stat-label {
     font-size: 1.2rem;
     color: var(--text-color);
     margin: 0;
+    
 }
 
 .stars i {
     font-size: 2rem;
     color: #044396 !important;
+    text-shadow: 1px 1px 2px var(--text-color);
 }
 
 /* Testimonials */
 .testimonial-section {
-    background-color: var(--gold-color);
+    background-color: var(--trans-black);
     border-bottom: 10px solid var(--gold-color1);
 }
 
@@ -178,7 +209,7 @@ body {
     max-width: 800px;
     height: 400px;
     background-color: var(--blue-color2);
-    border-left: 50px solid var(--blue-color);
+    border-left: 50px solid var(--text-blue);
     padding: 20px;
 }
 
@@ -198,13 +229,95 @@ body {
     margin-bottom: 20px;
 }
 
-.card-title {
-    color: var(--gold-color);
-    font-weight: 600;
+/* Services Section */
+.card-body{
+    text-align: center;
+    padding: 2em;
 }
-
+.card-title {
+    color: var(--black);
+    font-weight: 600;
+    text-shadow: 0.15rem 0.15rem 0.15rem var(--text-color);
+}
+.card-body .card-text{
+text-align: justify;
+}
 .card-subtitle {
     color: var(--smokewhite-color) !important;
 }
+.ourServices{
+    font-weight: 900;
+    text-shadow: 1px 1px 2px var(--text-color);
+}
 
-/* Services Section */
+
+
+
+/* Responsive Section(The Mobile Responsive) */
+
+@media (max-width: 402px) {
+    #starfont {
+            font-size: 5px;   
+        }
+
+    #lodoName {
+            color: var(--gold-color);
+            font-size: 1rem;
+            font-weight: 900;   
+        }
+    }
+@media (max-width: 360px) {
+    #starfont {
+            font-size: 5px;   
+        }
+#navbarbrand{
+    padding: 0;
+    margin: 0;
+}
+#logoID{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+}
+#lodoName {
+                color: var(--gold-color);
+                font-size: 0.25rem;
+                font-weight: 500;
+}  
+
+}
+
+@media (max-width: 1072px) {
+    
+    #lodoName {
+        color: var(--gold-color);
+        font-size: 2rem;
+        font-weight: 900;
+    }
+}
+@media (max-width: 766px) {
+
+    #lodoName {
+        color: var(--gold-color);
+        font-size: 1.4rem;
+        font-weight: 900;
+    }
+}
+
+@media (max-width: 452px) {
+
+    #lodoName {
+        color: var(--gold-color);
+        font-size: 1.3rem;
+        font-weight: 900;
+    }
+}
+@media (max-width: 436px) {
+
+
+    #lodoName {
+        color: var(--gold-color);
+        font-size: 1rem;
+        font-weight: 900;
+    }
+}

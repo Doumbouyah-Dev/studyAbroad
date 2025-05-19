@@ -98,7 +98,8 @@ text-shadow: 1px 1px 2px var(--text-color);
     background: url(../img/bg1.jpg);
     background-size: cover;
     background-position: center;
-    color: var(--light-blue-color);
+    color: var(--smokewhite-color);
+        text-shadow: 1px 1px 2px var(--text-color);
 
 }
 
